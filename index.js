@@ -17,3 +17,4 @@ io.on("connection", (socket) => {
 });
 
 io.listen(port);
+console.log(`Simple Socket.io Broadcasting is listening on port ${port}`)
