@@ -9,7 +9,6 @@ io.on("connection", (socket) => {
     socket.on("all", (data) => {
         // Broadcast to all clients
         io.emit("msg", data);
-      socket.username = username;
     });
     socket.on("other", (data) => {
         // Broadcast to other clients
